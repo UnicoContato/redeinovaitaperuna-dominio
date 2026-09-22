@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rede Inova Drogarias | Itaperuna</title>
+  <meta name="description" content="Rede Inova Drogarias em Itaperuna: medicamentos, perfumaria e atendimento próximo para cuidar de você.">
+  <meta name="keywords" content="Rede Inova Drogarias, drogaria em Itaperuna, farmácia, medicamentos, perfumaria">
+  <meta name="author" content="Rede Inova Drogarias">
+  <meta property="og:title" content="Rede Inova Drogarias | Itaperuna">
+  <meta property="og:description" content="Um novo nome, uma nova fase e o mesmo compromisso de cuidar de você.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://redeinovaitaperuna.com.br/">
+  <meta property="og:image" content="https://redeinovaitaperuna.com.br/img/fachada-rede-inova.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/fachada-rede-inova.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind = {
+      config: {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#d5222a',
+                dark: '#a9151d',
+                soft: '#fff1f2'
+              },
+              ink: '#151515'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif']
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#f7f7f7] text-ink antialiased">
+  <header id="siteHeader" class="fixed left-0 right-0 top-0 z-50 transition-transform duration-300">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#inicio" class="glass-nav flex items-center gap-3 rounded-full px-4 py-2 text-white shadow-2xl">
+        <img src="img/logo-selo-rede-inova.jpg" alt="Logo Rede Inova Drogarias" class="h-11 w-11 rounded-full object-cover ring-2 ring-white/75">
+        <span class="leading-tight">
+          <span class="block text-xs font-bold uppercase tracking-[0.24em] text-white/75">Rede</span>
+          <span class="block text-lg font-black uppercase italic">Inova Drogarias</span>
+        </span>
+      </a>
+      <nav class="glass-nav hidden items-center gap-1 rounded-full px-2 py-2 text-sm font-semibold text-white lg:flex">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#sobre" class="nav-link">Sobre Nós</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#galeria" class="nav-link">Marca</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/5522997216365?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Rede%20Inova%20Drogarias." target="_blank" rel="noopener" class="glass-cta hidden items-center gap-2 rounded-full px-5 py-3 text-sm font-extrabold text-white shadow-2xl sm:inline-flex">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Peça pelo WhatsApp
+        </a>
+        <button id="menuToggle" class="glass-nav grid h-12 w-12 place-items-center rounded-full text-white lg:hidden" aria-label="Abrir menu" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-panel mx-4 hidden rounded-3xl p-4 text-white shadow-2xl lg:hidden">
+      <a href="#inicio" class="mobile-link">Início</a>
+      <a href="#sobre" class="mobile-link">Sobre Nós</a>
+      <a href="#servicos" class="mobile-link">Serviços</a>
+      <a href="#galeria" class="mobile-link">Marca</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+      <a href="https://wa.me/5522997216365?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Rede%20Inova%20Drogarias." target="_blank" rel="noopener" class="mt-3 flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 font-extrabold text-primary">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        Peça pelo WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-section relative min-h-screen overflow-hidden">
+      <img src="img/fachada-rede-inova.jpg" alt="Fachada da Rede Inova Drogarias em Itaperuna" class="absolute inset-0 h-full w-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-br from-black/80 via-black/55 to-primary-dark/65"></div>
+      <div class="hero-grid absolute inset-0 opacity-35"></div>
+      <div class="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-4 pb-24 pt-32 sm:px-6 lg:grid-cols-[1fr_0.72fr] lg:px-8">
+        <div class="max-w-3xl reveal">
+          <span class="glass-pill mb-6 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-white">
+            Itaperuna - RJ
+          </span>
+          <h1 class="max-w-4xl text-5xl font-black uppercase italic leading-[0.95] text-white sm:text-7xl lg:text-8xl">Rede Inova Drogarias</h1>
+          <p class="mt-6 max-w-2xl text-xl font-medium leading-relaxed text-white/90 sm:text-2xl">Um novo nome, uma nova fase e o mesmo compromisso de cuidar de você.</p>
+          <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href="https://wa.me/5522997216365?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Rede%20Inova%20Drogarias." target="_blank" rel="noopener" class="hero-button inline-flex items-center justify-center gap-3 rounded-full px-7 py-4 text-base font-extrabold text-white shadow-2xl">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              Faça seu pedido
+            </a>
+            <a href="#sobre" class="glass-button inline-flex items-center justify-center rounded-full px-7 py-4 text-base font-extrabold text-white">Conheça a nova fase</a>
+          </div>
+        </div>
+        <div class="hero-logo-card reveal hidden overflow-hidden rounded-[2rem] p-3 shadow-2xl md:block">
+          <img src="img/logo-selo-rede-inova.jpg" alt="Selo Rede Inova Drogarias" class="h-full min-h-[360px] w-full rounded-[1.55rem] object-cover">
+          <div class="mt-3 grid grid-cols-[auto_1fr] items-center gap-3 rounded-3xl bg-white/90 p-4 backdrop-blur-xl">
+            <img src="img/logo-horizontal-rede-inova.jpg" alt="Logo Rede Inova Drogarias" class="h-14 w-20 rounded-2xl bg-white object-cover object-left">
+            <div>
+              <span class="block text-xs font-black uppercase tracking-[0.2em] text-primary">Nova identidade</span>
+              <span class="block text-sm font-bold text-zinc-650">(22) 99721-6365</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 z-10">
+        <div class="mx-auto grid max-w-7xl gap-3 px-4 pb-6 sm:grid-cols-3 sm:px-6 lg:px-8">
+          <div class="hero-stat reveal rounded-2xl p-5 text-white">
+            <strong class="block text-3xl font-black">2000</strong>
+            <span class="text-sm font-semibold text-white/75">História iniciada em Itaperuna</span>
+          </div>
+          <div class="hero-stat reveal rounded-2xl p-5 text-white">
+            <strong class="block text-3xl font-black">3</strong>
+            <span class="text-sm font-semibold text-white/75">Frentes: medicamentos, perfumaria e atendimento</span>
+          </div>
+          <div class="hero-stat reveal rounded-2xl p-5 text-white">
+            <strong class="block text-3xl font-black">RJ</strong>
+            <span class="text-sm font-semibold text-white/75">Presença no Centro de Itaperuna</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section-band bg-white py-24">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+        <div class="reveal">
+          <span class="section-kicker">Sobre Nós</span>
+          <h2 class="mt-4 text-4xl font-black tracking-tight text-ink sm:text-5xl">Nova identidade, cuidado de sempre.</h2>
+          <div class="mt-7 space-y-5 text-lg leading-relaxed text-zinc-650">
+            <p>A Rede Inova Drogarias nasceu de uma nova fase da nossa história. Somos a evolução da tradicional Drogaria Confiança, trazendo uma nova identidade, novos projetos e uma forma ainda mais moderna de cuidar dos nossos clientes.</p>
+            <p>Mais do que uma farmácia, queremos ser uma empresa presente na vida das pessoas, oferecendo produtos, serviços, informação e atendimento de qualidade, sempre com respeito, atenção e proximidade.</p>
+            <p>Nossa história é construída todos os dias ao lado dos nossos clientes e da nossa comunidade. Por isso, buscamos unir a experiência que conquistamos ao longo dos anos com inovação, tecnologia e novas formas de atender às necessidades de cada pessoa.</p>
+            <p>Na Rede Inova Drogarias, acreditamos que cuidar vai muito além de vender produtos. É ouvir, orientar, acolher e estar presente quando nossos clientes mais precisam.</p>
+            <p>Estamos construindo uma nova loja preparada para o futuro, mas sem perder aquilo que sempre foi essencial para nós: o relacionamento humano e o cuidado com as pessoas.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="image-glass relative overflow-hidden rounded-[2rem] p-3 shadow-2xl">
+            <img src="img/fachada-principal.jpg" alt="Fachada principal da Rede Inova Drogarias" class="h-full min-h-[420px] w-full rounded-[1.5rem] object-cover">
+            <div class="absolute bottom-8 left-8 right-8 rounded-3xl bg-white/85 p-6 shadow-2xl backdrop-blur-xl">
+              <span class="text-sm font-black uppercase tracking-[0.2em] text-primary">Rede Inova Drogarias</span>
+              <p class="mt-2 text-2xl font-black text-ink">Um novo nome, uma nova fase e o mesmo compromisso de cuidar de você.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-section bg-[#f1f1f1] py-16">
+      <div class="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
+        <div class="reveal">
+          <span class="section-kicker">Identidade Visual</span>
+          <h2 class="mt-4 text-3xl font-black tracking-tight text-ink sm:text-4xl">A marca como ponto de confiança.</h2>
+          <p class="mt-4 text-lg leading-relaxed text-zinc-650">As novas peças reforçam a fase Inova com presença forte, leitura rápida e linguagem visual alinhada à fachada da loja.</p>
+        </div>
+        <div class="brand-showcase reveal">
+          <img src="img/logo-horizontal-rede-inova.jpg" alt="Logo horizontal Rede Inova Drogarias" class="h-full min-h-[300px] w-full bg-white object-contain p-6 sm:p-8">
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section-band bg-[#f1f1f1] py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <span class="section-kicker">Serviços</span>
+          <h2 class="mt-4 text-4xl font-black tracking-tight text-ink sm:text-5xl">Cuidado, variedade e orientação em um só lugar.</h2>
+          <p class="mt-5 text-lg leading-relaxed text-zinc-650">Com base na atividade principal do CNPJ, a página valoriza o varejo farmacêutico e a experiência próxima de atendimento.</p>
+        </div>
+        <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <article class="service-card reveal">
+            <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+            <h3>Medicamentos</h3>
+            <p>Produtos farmacêuticos sem manipulação de fórmulas, com uma experiência organizada para facilitar a escolha do cliente.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+            <h3>Perfumaria</h3>
+            <p>Categoria pensada para complementar a rotina de cuidado pessoal, beleza e bem-estar dos clientes da comunidade.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+<path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h3>Atendimento</h3>
+            <p>Um relacionamento humano, próximo e respeitoso para orientar, acolher e cuidar quando cada cliente mais precisa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section-band bg-white py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div class="max-w-2xl reveal">
+            <span class="section-kicker">Marca</span>
+            <h2 class="mt-4 text-4xl font-black tracking-tight text-ink sm:text-5xl">Ilustração e identidade da Rede Inova.</h2>
+          </div>
+          <p class="max-w-md text-lg leading-relaxed text-zinc-650 reveal">A identidade visual da página foi criada a partir do vermelho intenso, do branco e da presença forte da nova marca.</p>
+        </div>
+        <div class="mt-12 grid gap-5 md:grid-cols-2">
+          <figure class="gallery-card reveal">
+            <img src="img/fachada-rede-inova.jpg" alt="Fachada completa da Rede Inova Drogarias">
+            <figcaption>Fachada</figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="img/logo-horizontal-rede-inova.jpg" alt="Logo Rede Inova Drogarias" class="gallery-logo">
+            <figcaption>Logo</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section-band contact-section py-24 text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <span class="section-kicker light">Contato e Localização</span>
+          <h2 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">Estamos no Centro de Itaperuna.</h2>
+          <p class="mt-5 text-lg leading-relaxed text-white/75">Confira os dados cadastrais extraídos do Cartão CNPJ enviado.</p>
+        </div>
+        <div class="mt-14 grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
+          <div class="contact-card reveal">
+            <dl class="space-y-5">
+              <div>
+                <dt>CNPJ</dt>
+                <dd>04.173.405/0001-82</dd>
+              </div>
+              <div>
+                <dt>Nome empresarial</dt>
+                <dd>DROGARIA DISTRAP LTDA</dd>
+              </div>
+              <div>
+                <dt>Nome fantasia no CNPJ</dt>
+                <dd>DROGARIA CONFIANCA</dd>
+              </div>
+              <div>
+                <dt>Logradouro, número e complemento</dt>
+                <dd>AV CARDOSO MOREIRA, 906</dd>
+              </div>
+              <div>
+                <dt>Bairro/Distrito</dt>
+                <dd>CENTRO</dd>
+              </div>
+              <div>
+                <dt>Município - UF</dt>
+                <dd>ITAPERUNA - RJ</dd>
+              </div>
+              <div>
+                <dt>CEP</dt>
+                <dd>28.300-000</dd>
+              </div>
+              <div>
+                <dt>Telefone</dt>
+                <dd><a href="tel:+5522997216365">(22) 99721-6365</a></dd>
+              </div>
+              <div>
+                <dt>Endereço eletrônico</dt>
+                <dd><a href="mailto:DROGARIACONFIANCAITAPERUNA@GMAIL.COM">DROGARIACONFIANCAITAPERUNA@GMAIL.COM</a></dd>
+              </div>
+            </dl>
+          </div>
+          <div class="map-wrap reveal">
+            <iframe title="Mapa para Rede Inova Drogarias em Itaperuna" src="https://www.google.com/maps?q=Av.%20Cardoso%20Moreira%2C%20906%2C%20Centro%2C%20Itaperuna%20RJ&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#111111] px-4 py-10 text-white sm:px-6 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-lg font-black uppercase italic">Rede Inova Drogarias</p>
+        <p class="mt-2 text-sm text-white/60">CNPJ 04.173.405/0001-82 - DROGARIA DISTRAP LTDA - 2026</p>
+      </div>
+      <button id="privacyOpen" class="w-fit rounded-full border border-white/20 px-5 py-3 text-sm font-bold text-white/80 transition hover:border-white hover:text-white">Política de Privacidade</button>
+    </div>
+  </footer>
+
+  <div id="privacyModal" class="modal fixed inset-0 z-[70] hidden items-center justify-center bg-black/70 px-4 py-8 backdrop-blur-sm" aria-hidden="true">
+    <div class="modal-box max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-[2rem] bg-white p-6 shadow-2xl sm:p-8">
+      <div class="flex items-start justify-between gap-5">
+        <div>
+          <span class="section-kicker">Privacidade</span>
+          <h2 class="mt-3 text-3xl font-black text-ink">Política de Privacidade</h2>
+        </div>
+        <button id="privacyClose" class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-zinc-100 text-2xl font-bold text-zinc-600 transition hover:bg-primary hover:text-white" aria-label="Fechar política de privacidade">&times;</button>
+      </div>
+      <div class="mt-6 space-y-4 text-base leading-relaxed text-zinc-650">
+        <p>Este site tem finalidade institucional e apresenta informações públicas sobre a Rede Inova Drogarias, seus serviços, localização e canais de contato.</p>
+        <p>Não realizamos cadastro de usuários, área de login, venda direta com pagamento online ou coleta ativa de dados pessoais por meio de formulários neste site.</p>
+        <p>Ao clicar em links de contato, como WhatsApp, telefone, e-mail ou mapa, o visitante será direcionado para serviços externos, que possuem políticas de privacidade próprias.</p>
+        <p>Podemos atualizar esta política para refletir mudanças no site, nos canais de atendimento ou na legislação aplicável.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

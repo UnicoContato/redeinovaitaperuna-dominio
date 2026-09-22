@@ -1,0 +1,342 @@
+:root {
+  --primary: #d5222a;
+  --primary-dark: #a9151d;
+  --ink: #151515;
+}
+
+html {
+  scroll-padding-top: 96px;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+.text-primary,
+.text-primary-DEFAULT {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background: var(--primary);
+}
+
+.glass-nav {
+  background: rgba(20, 20, 20, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(18px);
+}
+
+.glass-cta,
+.hero-button {
+  background: linear-gradient(135deg, #f23a42, #b80f18);
+  box-shadow: 0 18px 45px rgba(213, 34, 42, 0.34);
+}
+
+.glass-cta:hover,
+.hero-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 54px rgba(213, 34, 42, 0.46);
+}
+
+.glass-button,
+.glass-pill,
+.hero-stat,
+.mobile-panel {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(18px);
+}
+
+.nav-link {
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.mobile-link {
+  display: block;
+  border-radius: 1rem;
+  padding: 0.9rem 1rem;
+  font-weight: 800;
+}
+
+.mobile-link:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  height: 2px;
+  width: 20px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -7px;
+}
+
+.hamburger::after {
+  top: 7px;
+}
+
+.menu-open .hamburger {
+  transform: rotate(45deg);
+}
+
+.menu-open .hamburger::before {
+  transform: translateY(7px) rotate(90deg);
+}
+
+.menu-open .hamburger::after {
+  opacity: 0;
+}
+
+.header-hidden {
+  transform: translateY(-120%);
+}
+
+.hero-grid {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+.hero-logo-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(18px);
+}
+
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #fff1f2;
+  color: var(--primary);
+  padding: 0.55rem 0.95rem;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.section-kicker.light {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+.text-zinc-650 {
+  color: #555;
+}
+
+.section-band {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-glass {
+  background: linear-gradient(145deg, rgba(213, 34, 42, 0.18), rgba(255, 255, 255, 0.68));
+  border: 1px solid rgba(213, 34, 42, 0.16);
+}
+
+.brand-section {
+  border-top: 1px solid rgba(213, 34, 42, 0.08);
+  border-bottom: 1px solid rgba(213, 34, 42, 0.08);
+}
+
+.brand-showcase {
+  overflow: hidden;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.86);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.1);
+}
+
+.service-card {
+  min-height: 330px;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.08);
+  padding: 2.25rem;
+  text-align: center;
+  backdrop-filter: blur(16px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(213, 34, 42, 0.28);
+  box-shadow: 0 28px 80px rgba(213, 34, 42, 0.16);
+}
+
+.service-card h3 {
+  margin-top: 1rem;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.service-card p {
+  margin-top: 0.95rem;
+  line-height: 1.7;
+  color: #5c5c5c;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 340px;
+  border-radius: 2rem;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-card img {
+  height: 100%;
+  min-height: 340px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.gallery-card img.gallery-logo {
+  background: #fff;
+  object-fit: contain;
+  padding: 2rem;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.06);
+}
+
+.gallery-card figcaption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  padding: 0.7rem 1rem;
+  color: var(--primary-dark);
+  font-weight: 900;
+  backdrop-filter: blur(12px);
+}
+
+.contact-section {
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.18), transparent 35%), linear-gradient(135deg, #1b1b1b, #8f1219 55%, #151515);
+}
+
+.contact-card,
+.map-wrap {
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(18px);
+}
+
+.contact-card {
+  padding: 2rem;
+}
+
+.contact-card dt {
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.contact-card dd {
+  margin-top: 0.32rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #fff;
+  word-break: break-word;
+}
+
+.contact-card a {
+  transition: color 0.2s ease;
+}
+
+.contact-card a:hover {
+  color: #ffd7d9;
+}
+
+.map-wrap {
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.map-wrap iframe {
+  height: 100%;
+  min-height: 500px;
+  width: 100%;
+  border: 0;
+  filter: saturate(0.95) contrast(1.05);
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-box {
+  animation: modalIn 0.22s ease both;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section h1 {
+    font-size: clamp(3rem, 17vw, 4.8rem);
+  }
+
+  .contact-card {
+    padding: 1.4rem;
+  }
+
+  .map-wrap,
+  .map-wrap iframe {
+    min-height: 500px;
+  }
+}
